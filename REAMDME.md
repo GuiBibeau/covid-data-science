@@ -15,13 +15,13 @@ DUE DATE: 0 & 1 for Wednesday December 16th
     b.	Stocks @Yuri Emond @yahoo finance
     c.	Life insurance @Rony – if you find something else, its alright. 
 2.	Build a persona (average consumer in Canada) – This is going to be our benchmark @Yuri
-a.	On statistic Canada 
-b.	Salary 
-c.	What kind of investments (where, how much) 
+    a.	On statistic Canada 
+    b.	Salary 
+    c.	What kind of investments (where, how much) 
 3.	Establish the typical portfolio of the personas in 2019-2020
-a.	Example: the typical 40 years old have 300K investment + a house. 
+    a.	Example: the typical 40 years old have 300K investment + a house. 
 4.	Forecast this situation for 2 more years and see what the results are
-a.	Forecast this buying over a couple of years and correlate it to some metrics like Home ownership, retirement age, household dept ratios, etc.
+    a.	Forecast this buying over a couple of years and correlate it to some metrics like Home ownership, retirement age, household dept ratios, etc.
 5.	Write a conclusion about it: is the COVID good for us or not? 
 
 *** Added section 
