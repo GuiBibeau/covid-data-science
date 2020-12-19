@@ -1,7 +1,7 @@
-,Montréal,Ottawa-Gatineau,Toronto,Calgary,Edmonton,Vancouver
-Mortgage,1124,1272,1784,1515,1445,1900
-HELOC,645,424,515,492,435,553
-Line Of Credit,179,201,236,255,240,192
-Auto Loan,461,482,522,529,533,579
-Credit Card,93,67,59,66,69,54
-All Other Credit,388,411,415,394,414,462
+,Montréal,Ottawa-Gatineau,Toronto,Calgary,Edmonton,Vancouver,Quarter
+Mortgage,1124,1272,1784,1515,1445,1900,Q2 (2020/06/01)
+HELOC,645,424,515,492,435,553,Q2 (2020/06/01)
+Line Of Credit,179,201,236,255,240,192,Q2 (2020/06/01)
+Auto Loan,461,482,522,529,533,579,Q2 (2020/06/01)
+Credit Card,93,67,59,66,69,54,Q2 (2020/06/01)
+All Other Credit,388,411,415,394,414,462,Q2 (2020/06/01)
