@@ -13,7 +13,7 @@ def make_real_estate_df():
 
 def make_inflation_df():
     df = pd.read_csv('../data/raw/CPI_MONTHLY.csv')
-        # keep recent data
+    # keep recent data
     df = df.loc[df['date'] > '2018-12-01']
     # drop other columns
     df = df[['date', 'V41690973']]
