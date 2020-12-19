@@ -23,3 +23,19 @@ def make_inflation_df():
     df = df[['Date', 'Inflation_Change']]
     return df
 
+def make_portfolio_df():
+    RRSP = 'Registered Retirement Savings Plans (RRSPs), Registered Retirement Income Funds (RRIFs), Locked-in Retirement Accounts (LIRAs) and other'
+    PRINCIPAL_REDIDENCE = 'Principal residence'
+    TFSA = 'Tax Free Saving Accounts (TFSA)'
+
+    df = pd.read_csv('../data/raw/under35.csv')
+    df = df[['REF_DATE', 'Assets and debts', 'VALUE']]
+
+    portfolio_metrics = [RRSP, PRINCIPAL_REDIDENCE, TFSA]
+
+    df = df.loc[df['Assets and debts'].isin(portfolio_metrics)]
+    df.groupby('REF_DATE')
+
+    df = df.pivot_table(values='VALUE', index='REF_DATE', columns='Assets and debts').reset_index().melt(id_vars='REF_DATE')
+    df['Assets and debts'] = df['Assets and debts'].replace({RRSP: 'RRSP', 'Net Worth (assets less debts)': 'Net Worth', TFSA: 'TFSA'})
+    return df
