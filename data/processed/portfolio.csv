@@ -1,21 +1,13 @@
 ,REF_DATE,Assets and debts,value
-0,1999,Mortgage,14534.0
-1,2005,Mortgage,15338.0
-2,2012,Mortgage,33738.0
-3,2016,Mortgage,35893.0
-4,1999,Net Worth,54056.0
-5,2005,Net Worth,38371.0
-6,2012,Net Worth,58442.0
-7,2016,Net Worth,97145.0
-8,1999,Principal residence,21604.0
-9,2005,Principal residence,21950.0
-10,2012,Principal residence,55143.0
-11,2016,Principal residence,59153.0
-12,1999,RRSP,6517.0
-13,2005,RRSP,5533.0
-14,2012,RRSP,5072.0
-15,2016,RRSP,8483.0
-16,1999,TFSA,
-17,2005,TFSA,
-18,2012,TFSA,2372.0
-19,2016,TFSA,5217.0
+0,1999,Principal residence,21604.0
+1,2005,Principal residence,21950.0
+2,2012,Principal residence,55143.0
+3,2016,Principal residence,59153.0
+4,1999,RRSP,6517.0
+5,2005,RRSP,5533.0
+6,2012,RRSP,5072.0
+7,2016,RRSP,8483.0
+8,1999,TFSA,
+9,2005,TFSA,
+10,2012,TFSA,2372.0
+11,2016,TFSA,5217.0
