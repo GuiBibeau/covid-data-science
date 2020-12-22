@@ -10,7 +10,6 @@ def make_real_estate_df():
     # calculate some monthly changes
     df['Composite_Benchmark_Change'] = df[['Composite_Benchmark']].pct_change()[
         'Composite_Benchmark']
-    df = df[['Date', 'Composite_Benchmark_Change']]
     return df
 
 
@@ -23,7 +22,6 @@ def make_inflation_df():
     df = df.rename(columns={"date": "Date"})
     # get monthly change
     df['Inflation_Change'] = df[['V41690973']].pct_change()['V41690973'] 
-    df = df[['Date', 'Inflation_Change']]
     return df
 
 def make_portfolio_df():
