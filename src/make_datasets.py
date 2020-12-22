@@ -1,4 +1,7 @@
 import pandas as pd
+import yfinance as yf 
+from yahoo_fin.stock_info import get_data
+
 
 def make_real_estate_df():
     df = pd.read_excel('../data/raw/home.xlsx')
@@ -39,3 +42,33 @@ def make_portfolio_df():
     df = df.pivot_table(values='VALUE', index='REF_DATE', columns='Assets and debts').reset_index().melt(id_vars='REF_DATE')
     df['Assets and debts'] = df['Assets and debts'].replace({RRSP: 'RRSP', 'Net Worth (assets less debts)': 'Net Worth', TFSA: 'TFSA'})
     return df
+
+def make_sp_tsx_df():
+        df = get_data("^GSPTSE", 
+                    start_date="01/01/2019",
+                    end_date="12/15/2020",
+                    index_as_date = False,
+                    interval="1wk")
+        df = df[['date', 'close']]
+        df = df.set_index('date')
+        return df
+
+def make_google_df():
+        df = get_data("goog", 
+                    start_date="01/01/2019",
+                    end_date="12/15/2020",
+                    index_as_date = False,
+                    interval="1wk")
+        df = df[['date', 'close']]
+        df = df.set_index('date')
+        return df
+
+def make_amazon_df():
+        df = get_data("amzn", 
+                    start_date="01/01/2019",
+                    end_date="12/15/2020",
+                    index_as_date = False,
+                    interval="1wk")
+        df = df[['date', 'close']]
+        df = df.set_index('date')
+        return df
